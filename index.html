@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> MY SOUNDS</title>
+</head>
+
+<body>
+	<link href="index.css" rel="stylesheet">
+	<link href="pics.html" rel="stylesheet" name="">
+	<div class="container">
+		<ul class="nav">
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="music.html">MUSIC</a></li>
+			<li><a href="#">HOME</a></li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<div class="left-col">
+			<h1>𝕄𝕪 <br>𝕊𝕠𝕦𝕟𝕕𝕤</h1>
+		</div>
+	</div>
+
+	<audio id="mysound">
+		<source src="media/music.mp3" type="audio/mp3">
+	</audio>
+
+	<script>
+		var mysound = document.getElementById("mysound");
+		var icon = document.getElementById("icon");
+
+		// Creating a function that will change
+		// pause to play and vice-versa
+		icon.onclick = function() {
+			if (mysound.paused) {
+
+				// If paused then play the
+				// music and change the image
+				mysound.play();
+				icon.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210402235545/Pause.png";
+			} else {
+
+				// If playing then pause the
+				// music and change the image
+				mysound.pause();
+				icon.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/20210402235520/play.png";
+			}
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+	/* Styling the body */
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    /* styling the the pic of play button */
+    #p{
+        mix-blend-mode:multiply;
+        height:500px;
+    }
+
+    /* Styling the background image by
+    giving its url and position */
+    .container {
+        height: 100vh;
+        width: 100%;
+        background-image: url("pics/img.jpeg5.jpg");
+        
+        /* Image used: */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    /* Styling the list tags to the
+    right of the navigation bar */
+    .nav li {
+        float: right;
+        list-style: none;
+    }
+
+    /* Styling the anchor tags of
+    the navigation bar */
+    .nav a {
+        list-style: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.4rem;
+        font-weight: 550;
+        display: block;
+        padding: 5px 35px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    /* Giving position and margin
+    to the content-div */
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 45%;
+    }
+
+    /* Styling the left-col by
+    giving margin */
+    .left-col {
+        margin-left: 11%;
+    }
+
+    /* Styling the my sound placed
+    in the left-col */
+    .left-col h1 {
+        font-size: 100px;
+        color: rgb(245, 242, 245);
+    }
+
+    /* Styling the right-col */
+    .right-col {
+        float: right;
+        margin-right: 10%;
+        margin-top: -5%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Styling the text in the right-col */
+    .right-col p {
+        font-size: 21px;
+        color: rgb(63, 176, 159);
+        font-weight: 650;
+        margin-right: 20px;
+    }
+
+    /* Styling the cursor type
+    of the icon to pointer */
+    #icon {
+        cursor: pointer;
+    }
+    a{
+        cursor: pointer;
+    }
+    .nav li a:hover{
+        text-decoration: underline;
+    }
